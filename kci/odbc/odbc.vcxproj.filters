@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\include">
+      <UniqueIdentifier>{f0d14ad5-e763-4063-81e5-7e324a64f8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\oinclude">
+      <UniqueIdentifier>{f66779f3-a334-4b48-8a76-107b4aeaa5fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\kinclude">
+      <UniqueIdentifier>{d28ac644-c3f9-49ff-b0c9-96a2f0da5db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ksources">
+      <UniqueIdentifier>{e8871fa1-d3a3-4e40-bcea-343994df36d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\osources">
+      <UniqueIdentifier>{f8ae071a-e596-40e2-a22d-e81e7d12a554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ksources\encrypt">
+      <UniqueIdentifier>{e0389e8b-a4f7-4482-9fb8-fdf2b9a8b3a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kci.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kci_api.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kci_def.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_bigint.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_defs.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_err.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_mem.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_net.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_string.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_time.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_types.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\rh_ssl.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\sm4.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\turing.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oinclude\dialogs.h">
+      <Filter>头文件\oinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oinclude\error.h">
+      <Filter>头文件\oinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oinclude\odbc.h">
+      <Filter>头文件\oinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oinclude\Resource.h">
+      <Filter>头文件\oinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kinclude\kci_utils.h">
+      <Filter>头文件\kinclude</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ksources\kci_attrs.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_bin_mem.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_bind.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_blk_mem.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_cpool.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_defi.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_encry.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_env.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_error.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_lnk_mem.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_netio.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_server.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_session.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_stmt.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_string.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_svctx.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_thread.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_top_mem.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_trans.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_utls.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\utl_dtype.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\utl_others.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\utl_stmt.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\utl_time.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bigdUtils.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpAdd.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpEqual.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpFinal.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpInit.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpResize.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\bpSubtract.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\copyright_notice.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpAdd.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpCompare.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpDivide.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpEqual.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpGcd.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpHalfDiv.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpHalfMod.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpIsPrime.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpIsZero.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpModExp.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpModInv.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpModMult.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpModulo.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpMultiply.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpSetDigit.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpSetEqual.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpSetZero.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShiftLeft.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShiftRight.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortAdd.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortCmp.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortDiv.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortMod.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortMult.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpShortSub.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpSizeof.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\mpSubtract.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\sm4.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spDivide.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spGcd.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spIsPrime.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spModExp.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spModInv.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spModMult.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spMultiply.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\spPseudoRand.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\t_mpRSA.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\turing.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\turing_fast.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\encrypt\turing_sbox.c">
+      <Filter>源文件\ksources\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\catalog.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\connect.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\cursor.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\error.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\execute.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\handle.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\info.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\options.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\results.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\setup.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\transact.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\osources\utility.cpp">
+      <Filter>源文件\osources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ksources\kci_spool.cpp">
+      <Filter>源文件\ksources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

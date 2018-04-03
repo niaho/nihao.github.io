@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{49A61A76-2E45-4648-95D2-3FEEF3971594}</ProjectGuid>
+    <RootNamespace>odbc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\..\include;$(SolutionDir)\..\kinclude;$(SolutionDir)\..\oinclude;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\..\include;$(SolutionDir)\..\kinclude;$(SolutionDir)\..\oinclude;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/D "_CRT_SECURE_NO_DEPRECATE" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/D "_CRT_SECURE_NO_DEPRECATE"  /D"_WINSOCK_DEPRECATED_NO_WARNINGS" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kci.h" />
+    <ClInclude Include="..\..\include\kci_api.h" />
+    <ClInclude Include="..\..\include\kci_def.h" />
+    <ClInclude Include="..\..\kinclude\kci_bigint.h" />
+    <ClInclude Include="..\..\kinclude\kci_defs.h" />
+    <ClInclude Include="..\..\kinclude\kci_err.h" />
+    <ClInclude Include="..\..\kinclude\kci_mem.h" />
+    <ClInclude Include="..\..\kinclude\kci_net.h" />
+    <ClInclude Include="..\..\kinclude\kci_string.h" />
+    <ClInclude Include="..\..\kinclude\kci_time.h" />
+    <ClInclude Include="..\..\kinclude\kci_types.h" />
+    <ClInclude Include="..\..\kinclude\kci_utils.h" />
+    <ClInclude Include="..\..\kinclude\rh_ssl.h" />
+    <ClInclude Include="..\..\kinclude\sm4.h" />
+    <ClInclude Include="..\..\kinclude\turing.h" />
+    <ClInclude Include="..\..\oinclude\dialogs.h" />
+    <ClInclude Include="..\..\oinclude\error.h" />
+    <ClInclude Include="..\..\oinclude\odbc.h" />
+    <ClInclude Include="..\..\oinclude\Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ksources\encrypt\bigdUtils.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpAdd.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpEqual.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpFinal.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpInit.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpResize.c" />
+    <ClCompile Include="..\..\ksources\encrypt\bpSubtract.c" />
+    <ClCompile Include="..\..\ksources\encrypt\copyright_notice.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpAdd.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpCompare.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpDivide.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpEqual.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpGcd.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpHalfDiv.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpHalfMod.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpIsPrime.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpIsZero.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpModExp.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpModInv.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpModMult.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpModulo.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpMultiply.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpSetDigit.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpSetEqual.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpSetZero.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShiftLeft.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShiftRight.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortAdd.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortCmp.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortDiv.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortMod.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortMult.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpShortSub.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpSizeof.c" />
+    <ClCompile Include="..\..\ksources\encrypt\mpSubtract.c" />
+    <ClCompile Include="..\..\ksources\encrypt\sm4.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spDivide.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spGcd.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spIsPrime.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spModExp.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spModInv.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spModMult.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spMultiply.c" />
+    <ClCompile Include="..\..\ksources\encrypt\spPseudoRand.c" />
+    <ClCompile Include="..\..\ksources\encrypt\turing.c" />
+    <ClCompile Include="..\..\ksources\encrypt\turing_fast.c" />
+    <ClCompile Include="..\..\ksources\encrypt\turing_sbox.c" />
+    <ClCompile Include="..\..\ksources\encrypt\t_mpRSA.c" />
+    <ClCompile Include="..\..\ksources\kci_attrs.cpp" />
+    <ClCompile Include="..\..\ksources\kci_bind.cpp" />
+    <ClCompile Include="..\..\ksources\kci_bin_mem.cpp" />
+    <ClCompile Include="..\..\ksources\kci_blk_mem.cpp" />
+    <ClCompile Include="..\..\ksources\kci_cpool.cpp" />
+    <ClCompile Include="..\..\ksources\kci_defi.cpp" />
+    <ClCompile Include="..\..\ksources\kci_encry.cpp" />
+    <ClCompile Include="..\..\ksources\kci_env.cpp" />
+    <ClCompile Include="..\..\ksources\kci_error.cpp" />
+    <ClCompile Include="..\..\ksources\kci_lnk_mem.cpp" />
+    <ClCompile Include="..\..\ksources\kci_netio.cpp" />
+    <ClCompile Include="..\..\ksources\kci_server.cpp" />
+    <ClCompile Include="..\..\ksources\kci_session.cpp" />
+    <ClCompile Include="..\..\ksources\kci_spool.cpp" />
+    <ClCompile Include="..\..\ksources\kci_stmt.cpp" />
+    <ClCompile Include="..\..\ksources\kci_string.cpp" />
+    <ClCompile Include="..\..\ksources\kci_svctx.cpp" />
+    <ClCompile Include="..\..\ksources\kci_thread.cpp" />
+    <ClCompile Include="..\..\ksources\kci_top_mem.cpp" />
+    <ClCompile Include="..\..\ksources\kci_trans.cpp" />
+    <ClCompile Include="..\..\ksources\kci_utls.cpp" />
+    <ClCompile Include="..\..\ksources\utl_dtype.cpp" />
+    <ClCompile Include="..\..\ksources\utl_others.cpp" />
+    <ClCompile Include="..\..\ksources\utl_stmt.cpp" />
+    <ClCompile Include="..\..\ksources\utl_time.cpp" />
+    <ClCompile Include="..\..\osources\catalog.cpp" />
+    <ClCompile Include="..\..\osources\connect.cpp" />
+    <ClCompile Include="..\..\osources\cursor.cpp" />
+    <ClCompile Include="..\..\osources\error.cpp" />
+    <ClCompile Include="..\..\osources\execute.cpp" />
+    <ClCompile Include="..\..\osources\handle.cpp" />
+    <ClCompile Include="..\..\osources\info.cpp" />
+    <ClCompile Include="..\..\osources\options.cpp" />
+    <ClCompile Include="..\..\osources\results.cpp" />
+    <ClCompile Include="..\..\osources\setup.cpp" />
+    <ClCompile Include="..\..\osources\transact.cpp" />
+    <ClCompile Include="..\..\osources\utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

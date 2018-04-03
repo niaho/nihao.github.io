@@ -1,0 +1,30 @@
+
+.PHONY: clean
+
+CC=g++
+RM=rm -rf
+
+### TARGET ###
+KCI_LIB_FILE:= libkcidrv.so
+KCI_TEST_FILES=./ocitest/linuxtest/kci_test.cpp
+INCLUDE_PATH:=./include ./kinclude
+TARGET = ./ocitest/test.out
+
+### GCC ###
+GCC=@CC@
+
+### FLAGS ###
+GCC_OPT = -DLINUX -m64 -Wall -fPIC  -Werror -O3 -Wno-error=unused-result -Wno-error=unused-variable -Wno-error=parentheses -Wno-write-strings -Wno-error -fpermissive
+KCI_TEST_OBJS := $(KCI_TEST_FILES:.cpp=.o)
+KCI_HDR= $(foreach	dir, $(INCLUDE_PATH), -I$(dir))  
+      
+all: clean build  
+      
+build:
+	$(CC) -c $(GCC_OPT)  $(KCI_HDR) $(KCI_TEST_FILES) 
+	mv *.o ./ocitest/linuxtest
+##	$(CC)  -L. -lkcidrv -o $(TARGET)  $(KCI_TEST_OBJS)      
+	$(CC)  -o $(TARGET)  $(KCI_TEST_OBJS) ./libkcidrv.so -pthread    
+      
+clean:  
+	$(RM) $(KCI_TEST_OBJS) $(TARGET)  

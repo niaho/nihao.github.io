@@ -1,0 +1,44 @@
+CC=g++
+RM=rm -rf
+## debug 
+DBG_ENABLE=1      
+## target exec file name  
+TARGET:= libkcidrv.so      
+## get all source files  
+SRCS=$(wildcard ./ksources/*.cpp)      
+## all .o based on all .cpp  
+OBJS:=$(SRCS:.cpp=.o)
+## need libs, add at here  
+LIBS:=
+## used headers  file path  
+INCLUDE_PATH:=./include ./kinclude	
+## used include librarys file path  
+LIBRARY_PATH:=../lib      
+## debug for debug info, when use gdb to debug  
+ifeq (1, ${DBG_ENABLE})   
+	CFLAGS = -DLINUX -D_DEBUG -O0 -g -DDEBUG=1
+else
+	CFLAGS = -DLINUX
+endif  
+CFLAGS += -m64 -Wall -pthread -fPIC -fpermissive -Wwrite-strings -Wint-to-pointer-cast -Wunused-variable -Wsign-compare -Wunused-but-set-variable -Wparentheses
+      
+## get all include path  
+CFLAGS  += $(foreach	dir, $(INCLUDE_PATH), -I$(dir))  
+      
+## get all library path  
+LDFLAGS += $(foreach lib, $(LIBRARY_PATH), -L$(lib))  
+      
+## get all librarys  
+LDFLAGS += $(foreach lib, $(LIBS), -l$(lib))  
+      
+      
+all: clean build  
+      
+build:
+	$(CC) -c $(CFLAGS) $(SRCS) 
+	mv *.o ./ksources
+	$(CC) -O -shared -fPIC -o $(TARGET) $(OBJS)
+     ##   $(RM) $(OBJS)  
+      
+clean:  
+	$(RM) $(OBJS) $(TARGET)  

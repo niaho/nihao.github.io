@@ -1,0 +1,63 @@
+parameter  参数  参变量
+Execute 执行
+cursor 光标
+attribute（属性）
+increment： n. 增量；增加
+oriention 方向，定位
+CLI  命令行界面
+syntax  语法
+specified（规定的）
+invisible 不可见的
+elements  基础，原理
+remote  远程
+explicit 明确的 直率的
+assignment 分配
+technical report 1 TR1是一份规范
+
+
+off = skipIdent(stmt, off, stmt_len);
+			if (off < 0)
+			{
+				setError(errhp, 111, "Ident error");
+				return KCI_ERROR;
+			}
+设计ODBC是为了揭示数据库的能力，而不是补充他们。
+
+享受无法回避的紧张和痛苦。
+
+
+Git学习手册：：https://git-scm.com/book/zh/v2
+Gitblit 安装：https://www.cnblogs.com/xifenglou/p/6952604.html
+http://blog.csdn.net/hbtflying/article/details/52318691?locationNum=14
+http://www.mamicode.com/info-detail-626780.html
+需要注意的 是ip地址  以及个git服务的启动
+
+
+tortoise相关链接：官网：https://tortoisegit.org/
+    	windows无密码：http://blog.csdn.net/asdfsfsdgdfgh/article/details/52854343
+安装教程：http://blog.csdn.net/qq_14918243/article/details/61919041
+tortoise无密码：https://jingyan.baidu.com/article/495ba841f2892638b30edefa.html
+
+yum下载路径：http://mirrors.163.com/centos/6.9/os/x86_64/Packages/
+参考链接:http://www.178linux.com/81852
+29215534 it讨论群
+https://blog.csdn.net/yingms/article/details/53188974 关于堆栈的不错的理解
+http://blog.51cto.com/artcommend/18/p2   51篇关于c++的博客
+
+
+    TYPE=Ethernet  
+    DEVICE=eth0  
+    BOOTPROTO=none  
+    ONBOOT=yes  
+    IPADDR=10.0.1.27  
+    NETMASK=255.255.255.0  
+    GATEWAY=10.0.1.1  
+    BROADCAST=10.10.1.255  
+    HWADDR=00:0C:29:13:5D:74  
+    PEERDNS=yes  
+    DNS1=10.0.1.41  
+    USERCTL=no  
+    NM_CONTROLLED=no  
+    IPV6INIT=yes  
+    IPV6ADDR=FD55:faaf:e1ab:1B0D:10:14:24:106/64  
+
